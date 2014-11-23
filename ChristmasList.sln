@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChristmasList", "ChristmasL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChristmasList.Services", "ChristmasList.Services\ChristmasList.Services.csproj", "{4A42D8C9-10A4-4678-87C8-ACA7738845C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChristmasList.Data", "ChristmasList.Data\ChristmasList.Data.csproj", "{93D5C9E4-C2D9-4DA1-AB78-6EBCAC33ECFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4A42D8C9-10A4-4678-87C8-ACA7738845C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A42D8C9-10A4-4678-87C8-ACA7738845C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A42D8C9-10A4-4678-87C8-ACA7738845C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D5C9E4-C2D9-4DA1-AB78-6EBCAC33ECFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D5C9E4-C2D9-4DA1-AB78-6EBCAC33ECFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D5C9E4-C2D9-4DA1-AB78-6EBCAC33ECFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D5C9E4-C2D9-4DA1-AB78-6EBCAC33ECFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
