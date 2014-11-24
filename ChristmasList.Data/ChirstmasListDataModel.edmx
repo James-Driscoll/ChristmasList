@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="db_ChristmasListModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Circle">
+          <Key>
+            <PropertyRef Name="PK_CircleID" />
+          </Key>
+          <Property Name="PK_CircleID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="FK_User01" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User02" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User03" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User04" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User05" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User06" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User07" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User08" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User09" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User10" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User11" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User12" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User13" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User14" Type="nchar" MaxLength="10" />
+          <Property Name="FK_User15" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Present">
+          <Key>
+            <PropertyRef Name="PK_PresentID" />
+          </Key>
+          <Property Name="PK_PresentID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="URL" Type="nvarchar(max)" />
+          <Property Name="Price" Type="float" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="PK_UserID" />
+          </Key>
+          <Property Name="PK_UserID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Lastname" Type="nvarchar" MaxLength="50" />
+          <Property Name="Number" Type="nchar" MaxLength="10" />
+          <Property Name="Street" Type="nvarchar" MaxLength="50" />
+          <Property Name="Town" Type="nvarchar" MaxLength="50" />
+          <Property Name="County" Type="nvarchar" MaxLength="50" />
+          <Property Name="Country" Type="nvarchar" MaxLength="50" />
+          <Property Name="Postcode" Type="nchar" MaxLength="10" />
+          <Property Name="Telephone" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Pass" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="db_ChristmasListModelStoreContainer">
+          <EntitySet Name="Circle" EntityType="Self.Circle" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Present" EntityType="Self.Present" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db_ChristmasListModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Circle">
+          <Key>
+            <PropertyRef Name="PK_CircleID" />
+          </Key>
+          <Property Name="PK_CircleID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="FK_User01" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User02" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User03" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User04" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User05" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User06" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User07" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User08" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User09" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User10" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User11" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User12" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User13" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User14" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FK_User15" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Present">
+          <Key>
+            <PropertyRef Name="PK_PresentID" />
+          </Key>
+          <Property Name="PK_PresentID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="URL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Price" Type="Double" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="PK_UserID" />
+          </Key>
+          <Property Name="PK_UserID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Number" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Street" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Town" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="County" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Postcode" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Telephone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Pass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="db_ChristmasListEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Circles" EntityType="Self.Circle" />
+          <EntitySet Name="Presents" EntityType="Self.Present" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="db_ChristmasListModelStoreContainer" CdmEntityContainer="db_ChristmasListEntities">
+          <EntitySetMapping Name="Circles">
+            <EntityTypeMapping TypeName="db_ChristmasListModel.Circle">
+              <MappingFragment StoreEntitySet="Circle">
+                <ScalarProperty Name="PK_CircleID" ColumnName="PK_CircleID" />
+                <ScalarProperty Name="FK_User01" ColumnName="FK_User01" />
+                <ScalarProperty Name="FK_User02" ColumnName="FK_User02" />
+                <ScalarProperty Name="FK_User03" ColumnName="FK_User03" />
+                <ScalarProperty Name="FK_User04" ColumnName="FK_User04" />
+                <ScalarProperty Name="FK_User05" ColumnName="FK_User05" />
+                <ScalarProperty Name="FK_User06" ColumnName="FK_User06" />
+                <ScalarProperty Name="FK_User07" ColumnName="FK_User07" />
+                <ScalarProperty Name="FK_User08" ColumnName="FK_User08" />
+                <ScalarProperty Name="FK_User09" ColumnName="FK_User09" />
+                <ScalarProperty Name="FK_User10" ColumnName="FK_User10" />
+                <ScalarProperty Name="FK_User11" ColumnName="FK_User11" />
+                <ScalarProperty Name="FK_User12" ColumnName="FK_User12" />
+                <ScalarProperty Name="FK_User13" ColumnName="FK_User13" />
+                <ScalarProperty Name="FK_User14" ColumnName="FK_User14" />
+                <ScalarProperty Name="FK_User15" ColumnName="FK_User15" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Presents">
+            <EntityTypeMapping TypeName="db_ChristmasListModel.Present">
+              <MappingFragment StoreEntitySet="Present">
+                <ScalarProperty Name="PK_PresentID" ColumnName="PK_PresentID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="db_ChristmasListModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="PK_UserID" ColumnName="PK_UserID" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="Town" ColumnName="Town" />
+                <ScalarProperty Name="County" ColumnName="County" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Postcode" ColumnName="Postcode" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Pass" ColumnName="Pass" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
