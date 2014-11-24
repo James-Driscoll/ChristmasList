@@ -237,6 +237,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChristmasList.Data\ChristmasList.Data.csproj">
+      <Project>{93d5c9e4-c2d9-4da1-ab78-6ebcac33ecfb}</Project>
+      <Name>ChristmasList.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChristmasList.Services\ChristmasList.Services.csproj">
+      <Project>{4a42d8c9-10a4-4678-87c8-aca7738845c5}</Project>
+      <Name>ChristmasList.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
